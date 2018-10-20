@@ -24,6 +24,7 @@
 		76C03839217A94A400E528D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76C0383B217A94A400E528D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C0383C217A94A400E528D9 /* sparkly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sparkly.entitlements; sourceTree = "<group>"; };
+		76C03842217B396400E528D9 /* sparkly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sparkly-Bridging-Header.h"; sourceTree = "<group>"; };
 		DE436AFE62E4387005A3B5B5 /* Pods-sparkly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkly.release.xcconfig"; path = "Target Support Files/Pods-sparkly/Pods-sparkly.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,7 +46,6 @@
 				525A273791843F42CB3AEBF5 /* Pods-sparkly.debug.xcconfig */,
 				DE436AFE62E4387005A3B5B5 /* Pods-sparkly.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +84,7 @@
 				76C03838217A94A400E528D9 /* Main.storyboard */,
 				76C0383B217A94A400E528D9 /* Info.plist */,
 				76C0383C217A94A400E528D9 /* sparkly.entitlements */,
+				76C03842217B396400E528D9 /* sparkly-Bridging-Header.h */,
 			);
 			path = sparkly;
 			sourceTree = "<group>";
@@ -122,6 +123,12 @@
 				TargetAttributes = {
 					76C0382E217A94A400E528D9 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -346,7 +353,8 @@
 			baseConfigurationReference = 525A273791843F42CB3AEBF5 /* Pods-sparkly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = sparkly/sparkly.entitlements;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 95MYBJF2PF;
@@ -358,6 +366,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.valentinourbano.sparkly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "sparkly/sparkly-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -367,7 +378,8 @@
 			baseConfigurationReference = DE436AFE62E4387005A3B5B5 /* Pods-sparkly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = sparkly/sparkly.entitlements;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 95MYBJF2PF;
@@ -379,6 +391,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.valentinourbano.sparkly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "sparkly/sparkly-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;

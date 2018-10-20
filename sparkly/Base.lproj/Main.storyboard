@@ -24,7 +24,7 @@
                                         <menuItem title="Check for updates" id="lwK-h5-nW3">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="naH-aZ-2FE"/>
+                                                <action selector="checkForUpdates:" target="k0V-0u-1Av" id="u4F-Aq-wt6"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
@@ -683,6 +683,7 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="sparkly" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="k0V-0u-1Av" customClass="SUUpdater"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>

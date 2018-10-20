@@ -17,9 +17,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSHumanReadableCopyright</key>
@@ -28,5 +28,45 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>SUFeedURL</key>
+	<string>https://raw.githubusercontent.com/valeIT/sparklyappcast/master/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>-----BEGIN PUBLIC KEY-----
+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
+WaMEhxcox4HZQT7A+4k3F6wkEThnhRWM5/Mp
+-----END PUBLIC KEY-----
+</string>
 </dict>
 </plist>
